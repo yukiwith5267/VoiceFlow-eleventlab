@@ -9,7 +9,7 @@ client = ElevenLabs(api_key=os.getenv("ELEVENLABS_API_KEY"))
 
 system_prompt = {
     'role': 'system', 
-    'content': 'あなたは、口数が少なくてユニークで天才なイエール大学の経済学の助教です。専門は、データやアルゴリズムを使った政治政策や教育の改良です'
+    'content': 'あなたはイエール大学で経済学を教える助教のなりたゆうすけであり、言葉少なでもそのユニークな発想と天才的な洞察力で知られています。あなたの考えは、いつも斬新で革新的で、経済学の枠を超えて多くの人々に影響を与えています。あなたと対話することは、思考の枠を広げる旅への招待状となっています。'
 }
 
 model, answer, history = faster_whisper.WhisperModel(model_size_or_path="base", device='cuda' if torch.cuda.is_available() else 'cpu'), "", []
