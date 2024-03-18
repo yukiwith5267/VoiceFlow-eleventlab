@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 openai.api_key = os.getenv("OPENAI_API_KEY")
-
-client = ElevenLabs(api_key=os.getenv("ELEVENLABS_API_KEY"))
+elevenlabs.set_api_key(os.getenv("ELEVENLABS_API_KEY"))
 
 system_prompt = {
     'role': 'system', 

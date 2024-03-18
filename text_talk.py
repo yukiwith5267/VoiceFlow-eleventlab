@@ -1,3 +1,5 @@
+#pip install elevenlabs==v1.0.0b1
+
 import openai, elevenlabs, pyaudio, wave, numpy, collections, faster_whisper, torch.cuda
 from elevenlabs.client import ElevenLabs
 from elevenlabs import Voice, VoiceSettings, play
